@@ -23,7 +23,7 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">新規登録</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">パスワード再発行</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">ログイン</a></li>
                     </ul>
                 </div>
@@ -36,7 +36,7 @@
                     <div class="m-4 m-lg-5">
                         <h1 class="display-5 fw-bold">nagoyamasi</h1>
                         <p class="fs-4">ここは名古屋のB級グルメの食べログです</p>
-                        <a class="btn btn-primary btn-lg" href="#!">検索してみよう！！</a>
+                        <a class="btn btn-primary btn-lg" href="#!">Call to action</a>
                     </div>
                 </div>
             </div>
