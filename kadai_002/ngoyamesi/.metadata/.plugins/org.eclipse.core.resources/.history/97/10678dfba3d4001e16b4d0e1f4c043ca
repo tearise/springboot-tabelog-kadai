@@ -1,0 +1,8 @@
+package com.example.nagoyamesi.repository;
+
+import com.example.nagoyamesi.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Integer> {
+    // カスタムのクエリメソッドがあればここに追加できる
+}
