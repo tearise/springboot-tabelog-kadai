@@ -8,8 +8,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
 @Entity
 @Table(name = "company_identification")
+@Data
 public class CompanyIdentification {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
