@@ -17,19 +17,19 @@ INSERT IGNORE INTO users (id, role_id, name, hurigana, age, post_code, address, 
 
 
 -- reservationsテーブル
-INSERT IGNORE INTO reservations (user_id, restaurant_id, reservation_day, reservation_time, reservation_number_people)VALUES (1, 1, '2024-03-02', '18:00:00', 2);
-INSERT IGNORE INTO reservations (user_id, restaurant_id, reservation_day, reservation_time, reservation_number_people)VALUES (2, 2, '2024-03-04', '19:00:00', 3);
-INSERT IGNORE INTO reservations (user_id, restaurant_id, reservation_day, reservation_time, reservation_number_people)VALUES (3, 3, '2024-03-02', '18:00:00', 4);
+INSERT IGNORE INTO reservations (user_id, restaurant_id, reservation_day, reservation_time, reservation_number_people) VALUES (1, 1, '2024-03-02', '18:00:00', 2);
+INSERT IGNORE INTO reservations (user_id, restaurant_id, reservation_day, reservation_time, reservation_number_people) VALUES (2, 2, '2024-03-04', '19:00:00', 3);
+INSERT IGNORE INTO reservations (user_id, restaurant_id, reservation_day, reservation_time, reservation_number_people) VALUES (3, 3, '2024-03-02', '18:00:00', 4);
 
 -- reviewsテーブル
-INSERT IGNORE INTO reviews (restaurant_id, user_id, number_stars, comment)VALUES (1, 1, 4, 'とてもおいしかった。');
-INSERT IGNORE INTO reviews (restaurant_id, user_id, number_stars, comment)VALUES (3, 2, 4, 'また行きたい。');
-INSERT IGNORE INTO reviews (restaurant_id, user_id, number_stars, comment)VALUES (2, 3, 2, '料理はおいしかったがサービスがいまいちだった。');
+INSERT IGNORE INTO reviews (restaurant_id, user_id, number_stars, comment) VALUES (1, 1, 4, 'とてもおいしかった。');
+INSERT IGNORE INTO reviews (restaurant_id, user_id, number_stars, comment) VALUES (3, 2, 4, 'また行きたい。');
+INSERT IGNORE INTO reviews (restaurant_id, user_id, number_stars, comment) VALUES (2, 3, 2, '料理はおいしかったがサービスがいまいちだった。');
 
 -- restaurants
-INSERT IGNORE INTO restaurants (image_name, name, address, opening_hours, telephone_number, category_id, regular_closing, description) VALUES ('piza.jpg', 'pizaPIZA', '愛知県名古屋市中区栄1-1-1', 8, '123-456-7890', 3, '日曜日', 'とてもおいしくもちもちでえす');
-INSERT IGNORE INTO restaurants (image_name, name, address, opening_hours, telephone_number, category_id, regular_closing, description) VALUES ('udon.jpg', 'うどーん', '愛知県名古屋市千種区今池2-2-2', 10, '547-456-7890', 4, '日曜日', 'つるっとジューシ');
-INSERT IGNORE INTO restaurants (image_name, name, address, opening_hours, telephone_number, category_id, regular_closing, description) VALUES ('tenpura.jpg', 'ぷら天', '愛知県名古屋市東区東桜1-3-5', 11, '547-456-7890', 5, '水曜日', 'かりっと');
+INSERT IGNORE INTO restaurants (image_name, name, address, opening_hours, telephone_number, category_id, regular_closing, description) VALUES ('piza.jpg', 'pizaPIZA', '愛知県名古屋市中区栄1-1-1', '8:00-22:00', '123-456-7890', 3, '日曜日', 'とてもおいしくもちもちでえす');
+INSERT IGNORE INTO restaurants (image_name, name, address, opening_hours, telephone_number, category_id, regular_closing, description) VALUES ('udon.jpg', 'うどーん', '愛知県名古屋市千種区今池2-2-2', '10:00-23:00', '547-456-7890', 4, '日曜日', 'つるっとジューシ');
+INSERT IGNORE INTO restaurants (image_name, name, address, opening_hours, telephone_number, category_id, regular_closing, description) VALUES ('tenpura.jpg', 'ぷら天', '愛知県名古屋市東区東桜1-3-5', '11:00-21:00', '547-456-7890', 5, '水曜日', 'かりっと');
 
 -- company_identification
 INSERT IGNORE INTO company_identification (company_name, representative_director, date_establishment, address, telephone_number, business_content) VALUES('ABC株式会社', '田中太郎', 2000, '東京都渋谷区1-1-1', 1234567890, '料理コンサルティング');

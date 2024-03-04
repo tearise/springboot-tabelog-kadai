@@ -17,4 +17,8 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="com.example.nagoyamesi.entity.Restaurant"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
+    <fullyQualifiedTypeName name="org.springframework.data.web.PageableDefault"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.Sort.Direction"/>
 </qualifiedTypeNameHistroy>
