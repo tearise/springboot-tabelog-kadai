@@ -1,5 +1,0 @@
-package com.example.nagoyamesi.repository;
-
-public interface VerificationTokenRepository {
-
-}

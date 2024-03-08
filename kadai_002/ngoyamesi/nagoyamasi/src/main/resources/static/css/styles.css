@@ -11581,3 +11581,7 @@ textarea.form-control-lg {
  .samuraitravel-btn:hover {
    opacity: 0.8;   
  }
+  .samuraitravel-pre-wrap {
+   /* 改行文字で行を折り返す */
+   white-space: pre-wrap;
+ }
