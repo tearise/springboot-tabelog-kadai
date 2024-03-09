@@ -28,7 +28,7 @@ public class Restaurant {
     private String address;
 
     @Column(name = "opening_hours", nullable = false)
-    private String openingHours;
+    private Integer openingHours;
 
     @Column(name = "telephone_number", nullable = false)
     private String telephoneNumber;

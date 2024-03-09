@@ -43,7 +43,7 @@ public class User {
 	private String email_address;
 	
 	@Column(name = "telephone_number")
-	private String telephoneNumber;
+	private Integer telephoneNumber;
     
     @Column(name = "password")
     private String password;

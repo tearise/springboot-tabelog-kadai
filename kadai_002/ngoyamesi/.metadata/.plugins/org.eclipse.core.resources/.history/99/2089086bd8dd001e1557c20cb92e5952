@@ -28,16 +28,16 @@ public class Restaurant {
     private String address;
 
     @Column(name = "opening_hours", nullable = false)
-    private String openingHours;
+    private Integer openingHours;
 
     @Column(name = "telephone_number", nullable = false)
-    private String telephoneNumber;
+    private Integer telephoneNumber;
 
     @Column(name = "category_id", nullable = false)
     private Integer categoryId;
 
     @Column(name = "regular_closing", nullable = false)
-    private String regularClosing;
+    private Integer regularClosing;
 
     @Column(name = "description", length = 255, nullable = false)
     private String description;

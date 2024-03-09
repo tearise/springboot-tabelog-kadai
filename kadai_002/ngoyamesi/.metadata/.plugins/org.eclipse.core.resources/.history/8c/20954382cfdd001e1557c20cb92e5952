@@ -11,9 +11,9 @@ INSERT IGNORE INTO categories (id, name) VALUES (4 , 'うどん');
 INSERT IGNORE INTO categories (id, name) VALUES (5 , '天ぷら');
 
 -- usersテーブル
-INSERT IGNORE INTO users (id, role_id, name, hurigana, age, post_code, address, email_address, telephone_number, password, enabled) VALUES(1, 1, '高梨綾香', 'タカナシ アヤカ', 30, '123-4567', '東京都渋谷区神南1-2-3', '.com', '123-456-7890', 'password123', 'true');
-INSERT IGNORE INTO users (id, role_id, name, hurigana, age, post_code, address, email_address, telephone_number, password, enabled) VALUES(2, 2, '佐藤投機', 'サトウ トウキ', 25, '987-6543', '大阪府大阪市北区梅田4-5-6', 'jane@example.com', '987-654-3210', 'password456', 'true');
-INSERT IGNORE INTO users (id, role_id, name, hurigana, age, post_code, address, email_address, telephone_number, password, enabled) VALUES(3, 3, '田中太郎', 'タナカ タロウ', 35, '543-2167', '京都府京都市中京区河原町7-8-9', 'alice@example.com', '567-890-1234', 'password789', 'false');
+INSERT IGNORE INTO users (id, role_id, name, hurigana, age, post_code, address, email_address, telephone_number, password, enabled) VALUES(1, 1, '高梨綾香', 'タカナシ アヤカ', 30, 1234567, '東京都渋谷区神南1-2-3', '.com', 1234567890, 'password123', 'true');
+INSERT IGNORE INTO users (id, role_id, name, hurigana, age, post_code, address, email_address, telephone_number, password, enabled) VALUES(2, 2, '佐藤投機', 'サトウ トウキ', 25, 9876543, '大阪府大阪市北区梅田4-5-6', 'jane@example.com', 9876543210, 'password456', 'true');
+INSERT IGNORE INTO users (id, role_id, name, hurigana, age, post_code, address, email_address, telephone_number, password, enabled) VALUES(3, 3, '田中太郎', 'タナカ タロウ', 35, 5432167, '京都府京都市中京区河原町7-8-9', 'alice@example.com', 5678901234, 'password789', 'false');
 
 
 -- reservationsテーブル

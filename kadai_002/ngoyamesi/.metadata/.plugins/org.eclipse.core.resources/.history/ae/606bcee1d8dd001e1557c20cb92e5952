@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS restaurants(
 	image_name VARCHAR(200),
 	name VARCHAR(255) NOT NULL,
 	address VARCHAR(255) NOT NULL,
-	opening_hours VARCHAR(50) NOT NULL,
+	opening_hours INT NOT NULL,
 	telephone_number VARCHAR(50) NOT NULL,
 	category_id INT NOT NULL,
 	regular_closing VARCHAR(50) NOT NULL,
