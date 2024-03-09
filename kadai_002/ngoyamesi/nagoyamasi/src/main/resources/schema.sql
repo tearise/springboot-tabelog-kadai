@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS restaurants(
 	address VARCHAR(255) NOT NULL,
 	opening_hours VARCHAR(50) NOT NULL,
 	telephone_number VARCHAR(50) NOT NULL,
-	category_id INT NOT NULL,
+	category_id INT,
 	regular_closing VARCHAR(50) NOT NULL,
 	description VARCHAR(255) NOT NULL,
 	created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
