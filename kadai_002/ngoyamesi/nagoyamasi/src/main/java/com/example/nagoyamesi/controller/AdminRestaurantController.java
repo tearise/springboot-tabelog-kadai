@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.nagoyamesi.entity.Restaurant;
+import com.example.nagoyamesi.form.RestaurantEditForm;
 import com.example.nagoyamesi.form.RestaurantRegisterForm;
 import com.example.nagoyamesi.repository.RestaurantRepository;
 import com.example.nagoyamesi.service.RestaurantService;
@@ -81,5 +82,17 @@ public class AdminRestaurantController {
          redirectAttributes.addFlashAttribute("successMessage", "店舗を登録しました。");    
          
          return "redirect:/admin/restaurants";
+     }   
+	 
+	 @GetMapping("/{id}/edit")
+     public String edit(@PathVariable(name = "id") Integer id, Model model) {
+         Restaurant restaurant = restaurantRepository.getReferenceById(id);
+         String imageName = restaurant.getImageName();
+         RestaurantEditForm restaurantEditForm = new RestaurantEditForm(restaurant.getId(), restaurant.getName(), null, restaurant.getDescription(), restaurant.getOpeningHours(), restaurant.getRegularClosing(), restaurant.getAddress(), restaurant.getTelephoneNumber());
+         
+         model.addAttribute("imageName", imageName);
+         model.addAttribute("restaurantEditForm", restaurantEditForm);
+         
+         return "admin/restaurants/edit";
      }    
 }
