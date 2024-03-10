@@ -88,11 +88,23 @@ public class AdminRestaurantController {
      public String edit(@PathVariable(name = "id") Integer id, Model model) {
          Restaurant restaurant = restaurantRepository.getReferenceById(id);
          String imageName = restaurant.getImageName();
-         RestaurantEditForm restaurantEditForm = new RestaurantEditForm(restaurant.getId(), restaurant.getName(), null, restaurant.getDescription(), restaurant.getOpeningHours(), restaurant.getRegularClosing(), restaurant.getAddress(), restaurant.getTelephoneNumber());
+         RestaurantEditForm restaurantEditForm = new RestaurantEditForm(restaurant.getId(), null, restaurant.getName(),  restaurant.getDescription(), restaurant.getOpeningHours(), restaurant.getRegularClosing(), restaurant.getAddress(), restaurant.getTelephoneNumber());
          
          model.addAttribute("imageName", imageName);
          model.addAttribute("restaurantEditForm", restaurantEditForm);
          
          return "admin/restaurants/edit";
-     }    
+     } 
+	 //更新
+	 @PostMapping("/{id}/update")
+     public String update(@ModelAttribute @Validated RestaurantEditForm restaurantEditForm, BindingResult bindingResult, RedirectAttributes redirectAttributes) {        
+         if (bindingResult.hasErrors()) {
+             return "admin/restaurants/edit";
+         }
+         
+         restaurantService.update(restaurantEditForm);
+         redirectAttributes.addFlashAttribute("successMessage", "民宿情報を編集しました。");
+         
+         return "redirect:/admin/restaurants";
+     }
 }

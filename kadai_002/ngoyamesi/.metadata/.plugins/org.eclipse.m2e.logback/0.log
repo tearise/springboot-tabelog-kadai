@@ -2080,3 +2080,47 @@
 2024-03-09 20:40:49,146 [Worker-13: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-03-09 20:40:49,146 [Worker-13: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-03-09 20:40:49,151 [Worker-13: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 21:09:21,439 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-10 21:09:44,139 [Worker-3: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 21:09:44,153 [Worker-3: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 19 resources from src\main\resources to target\classes
+2024-03-10 21:09:44,162 [Worker-3: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 21:11:53,078 [Worker-1: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-03-10 21:11:53,079 [Worker-1: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 21:11:53,083 [Worker-1: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 21:19:34,963 [Worker-1: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-03-10 21:19:34,964 [Worker-1: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 21:19:34,968 [Worker-1: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 21:20:47,266 [Worker-20: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-03-10 21:20:47,267 [Worker-20: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 21:20:47,272 [Worker-20: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 21:28:34,584 [Worker-23: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 21:28:34,590 [Worker-23: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 19 resources from src\main\resources to target\classes
+2024-03-10 21:28:34,596 [Worker-23: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 21:30:29,237 [Worker-20: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 21:30:29,253 [Worker-20: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 19 resources from src\main\resources to target\classes
+2024-03-10 21:30:29,265 [Worker-20: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 21:34:07,313 [Worker-26: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-03-10 21:34:07,314 [Worker-26: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 21:34:07,318 [Worker-26: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 21:49:22,883 [Worker-35: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-03-10 21:49:22,884 [Worker-35: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 21:49:22,890 [Worker-35: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 21:49:27,125 [Worker-33: nagoyamasi - NagoyamasiApplication の起動] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-03-10 21:49:27,125 [Worker-33: nagoyamasi - NagoyamasiApplication の起動] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 21:49:27,129 [Worker-33: nagoyamasi - NagoyamasiApplication の起動] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 21:51:34,475 [Worker-37: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-03-10 21:51:34,475 [Worker-37: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 21:51:34,479 [Worker-37: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 21:51:49,871 [Worker-38: nagoyamasi - NagoyamasiApplication の起動] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-03-10 21:51:49,871 [Worker-38: nagoyamasi - NagoyamasiApplication の起動] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 21:51:49,874 [Worker-38: nagoyamasi - NagoyamasiApplication の起動] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 21:55:24,286 [Worker-38: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-03-10 21:55:24,287 [Worker-38: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 21:55:24,290 [Worker-38: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 22:12:53,317 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-10 22:17:33,199 [Worker-2: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 22:17:33,212 [Worker-2: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 21 resources from src\main\resources to target\classes
+2024-03-10 22:17:33,221 [Worker-2: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources
+2024-03-10 22:19:14,781 [Worker-2: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-03-10 22:19:14,782 [Worker-2: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-03-10 22:19:14,786 [Worker-2: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\yuta2\Desktop\submission\kadai_002\ngoyamesi\nagoyamasi\src\test\resources

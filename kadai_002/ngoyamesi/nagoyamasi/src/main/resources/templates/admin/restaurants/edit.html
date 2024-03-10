@@ -26,7 +26,7 @@
                              
                              <h1 class="mb-4 text-center">店舗情報編集</h1>         
                              
-                             <form method="post" th:action="@{/admin/restaurants/__${restaurantEditForm.getId()}__/update}" th:object="${houseEditForm}" enctype="multipart/form-data">   
+                             <form method="post" th:action="@{/admin/restaurants/__${restaurantEditForm.getId()}__/update}" th:object="${restaurantEditForm}" enctype="multipart/form-data">   
                                  <input type="hidden" th:field="*{id}">
                                                                                           
                                  <div class="form-group row mb-3">
@@ -113,12 +113,15 @@
                      </div>
                  </div>                 
              </main>
-             
+              </div>  
              <!-- フッター -->
              <div th:replace="~{fragment :: footer}"></div>
-         </div>    
+          
          
-         <div th:replace="~{fragment :: scripts}"></div>  
+         
+         <div th:replace="~{fragment :: script}"></div>         
+
+
          <script th:src="@{/js/preview.js}"></script>     
      </body>
  </html>
