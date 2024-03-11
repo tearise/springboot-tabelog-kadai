@@ -107,4 +107,13 @@ public class AdminRestaurantController {
          
          return "redirect:/admin/restaurants";
      }
+	 //削除
+	 @PostMapping("/{id}/delete")
+     public String delete(@PathVariable(name = "id") Integer id, RedirectAttributes redirectAttributes) {        
+         restaurantRepository.deleteById(id);
+                 
+         redirectAttributes.addFlashAttribute("successMessage", "民宿を削除しました。");
+         
+         return "redirect:/admin/restaurants";
+     }
 }
