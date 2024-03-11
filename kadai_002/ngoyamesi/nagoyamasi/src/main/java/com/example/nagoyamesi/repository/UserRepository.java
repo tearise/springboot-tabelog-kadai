@@ -6,4 +6,5 @@ import com.example.nagoyamesi.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
     // カスタムのクエリメソッドがあればここに追加できる
+	public User findByEmail(String email_address);
 }

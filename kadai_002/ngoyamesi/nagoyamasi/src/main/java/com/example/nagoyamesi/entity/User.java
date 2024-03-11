@@ -49,7 +49,7 @@ public class User {
     private String password;
     
     @Column(name = "enabled")
-    private String enabled;
+    private Boolean enabled;
     
     @Column(name = "created_at", insertable = false, updatable = false)
     private Timestamp createdAt;

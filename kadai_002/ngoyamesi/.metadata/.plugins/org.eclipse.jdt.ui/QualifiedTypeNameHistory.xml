@@ -22,7 +22,6 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.NotBlank"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.example.nagoyamesi.repository.RestaurantRepository"/>
     <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
     <fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
@@ -42,4 +41,14 @@
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.NotNull"/>
     <fullyQualifiedTypeName name="com.example.nagoyamesi.form.RestaurantEditForm"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetailsService"/>
+    <fullyQualifiedTypeName name="com.example.nagoyamesi.repository.UserRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetails"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UsernameNotFoundException"/>
+    <fullyQualifiedTypeName name="com.example.nagoyamesi.entity.User"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.GrantedAuthority"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.authority.SimpleGrantedAuthority"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 </qualifiedTypeNameHistroy>
