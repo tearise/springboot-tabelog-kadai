@@ -6,4 +6,5 @@ import com.example.nagoyamesi.entity.Role;
 
 public interface RoleRepository extends JpaRepository<Role, Integer> {
     // カスタムのクエリメソッドがあればここに追加できる
+	public Role findByName(String name);
 }
