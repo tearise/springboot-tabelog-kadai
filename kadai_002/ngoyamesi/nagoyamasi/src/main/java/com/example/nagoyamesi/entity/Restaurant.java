@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Table;
 import lombok.Data;
 @Entity
@@ -32,8 +33,9 @@ public class Restaurant {
 
     @Column(name = "telephone_number", nullable = false)
     private String telephoneNumber;
-
-    @Column(name = "category_id", nullable = false)
+    
+    //@OneToMany
+    @JoinColumn(name = "category_id", nullable = false)
     private Integer categoryId;
 
     @Column(name = "regular_closing", nullable = false)

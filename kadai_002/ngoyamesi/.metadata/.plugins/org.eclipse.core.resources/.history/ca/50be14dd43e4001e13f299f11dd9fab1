@@ -1,0 +1,8 @@
+package HouseController;
+
+
+@Controller
+@RequesutMapping("/restaurants")
+public class RestaurantController {
+
+}
