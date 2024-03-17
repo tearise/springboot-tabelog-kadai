@@ -1,0 +1,11 @@
+package com.example.nagoyamesi.event;
+
+import org.springframework.context.ApplicationEvent;
+
+import lombok.Getter;
+
+@Getter
+public class SignupEvent extends ApplicationEvent{
+	private User user;
+	private String requestUrl;
+}

@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.example.nagoyamesi.entity.Role;
 import com.example.nagoyamesi.entity.User;
 import com.example.nagoyamesi.form.SignupForm;
+import com.example.nagoyamesi.form.UserEditForm;
 import com.example.nagoyamesi.repository.RoleRepository;
 import com.example.nagoyamesi.repository.UserRepository;
 
@@ -36,10 +37,25 @@ public class UserService {
          user.setEmailAddress(signupForm.getEmailAddress());
          user.setPassword(passwordEncoder.encode(signupForm.getPassword()));
          user.setRole(role);
-         user.setEnabled(true);        
+         user.setEnabled(false);        
          
          return userRepository.save(user);
-     }    
+     }  
+     
+     @Transactional
+     public void update(UserEditForm userEditForm) {
+         User user = userRepository.getReferenceById(userEditForm.getId());
+         
+         user.setName(userEditForm.getName());
+         user.setFurigana(userEditForm.getFurigana());
+         user.setAge(userEditForm.getAge());
+         user.setPostCode(userEditForm.getPostCode());
+         user.setAddress(userEditForm.getAddress());
+         user.setTelephoneNumber(userEditForm.getTelephoneNumber());
+         user.setEmailAddress(userEditForm.getEmailAddress());      
+         
+         userRepository.save(user);
+     } 
      
      // メールアドレスが登録済みかどうかをチェックする
      public boolean isEmailRegistered(String emailAddress) {
@@ -51,4 +67,17 @@ public class UserService {
      public boolean isSamePassword(String password, String passwordConfirmation) {
          return password.equals(passwordConfirmation);
      } 
+     
+     // ユーザーを有効にする
+     @Transactional
+     public void enableUser(User user) {
+         user.setEnabled(true); 
+         userRepository.save(user);
+     }    
+     
+     // メールアドレスが変更されたかどうかをチェックする
+     public boolean isEmailChanged(UserEditForm userEditForm) {
+         User currentUser = userRepository.getReferenceById(userEditForm.getId());
+         return !userEditForm.getEmailAddress().equals(currentUser.getEmailAddress());      
+     }  
 }

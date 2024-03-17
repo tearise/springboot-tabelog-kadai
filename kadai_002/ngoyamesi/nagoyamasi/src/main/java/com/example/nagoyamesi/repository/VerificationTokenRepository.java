@@ -6,4 +6,5 @@ import com.example.nagoyamesi.entity.VerificationToken;
 
 public interface VerificationTokenRepository extends JpaRepository<VerificationToken, Integer> {
     // カスタムのクエリメソッドがあればここに追加できる
+	public VerificationToken findByToken(String token);
 }

@@ -1,0 +1,8 @@
+package com.example.nagoyamesi.event;
+
+
+
+@Component
+public class SignupEventPublisher {
+
+}
