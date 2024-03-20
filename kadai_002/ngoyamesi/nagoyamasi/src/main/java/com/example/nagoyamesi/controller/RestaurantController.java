@@ -26,7 +26,8 @@ public class RestaurantController {
     @GetMapping
     public String index(@RequestParam(name = "keyword", required = false) String keyword,
                         @RequestParam(name = "area", required = false) String area,
-                       // @RequestParam(name = "price", required = false) Integer price,                        
+                       // @RequestParam(name = "price", required = false) Integer price, 
+                        @RequestParam(name = "order", required = false) String order,
                         @PageableDefault(page = 0, size = 10, sort = "id", direction = Direction.ASC) Pageable pageable,
                         Model model) 
     {
@@ -45,7 +46,8 @@ public class RestaurantController {
         model.addAttribute("restaurantPage", restaurantPage);
         model.addAttribute("keyword", keyword);
         model.addAttribute("area", area);
-        //model.addAttribute("price", price);                              
+        //model.addAttribute("price", price);
+        model.addAttribute("order", order);
         
         return "restaurants/index";
     }

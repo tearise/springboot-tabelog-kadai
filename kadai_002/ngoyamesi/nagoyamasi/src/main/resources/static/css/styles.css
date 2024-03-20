@@ -11620,6 +11620,24 @@ h3 {
    object-fit: cover;
  }
 
+.samuraitravel-sort-box {
+   width: 150px;
+ }
+ 
+  h2 {
+   font-size: 1.475rem;
+ }
+ 
+ .samuraitravel-vertical-card-image {
+   width: 100%;
+   height: 150px;
+   object-fit: cover;
+ }
+ 
+ .samuraitravel-search-form {
+     max-width: 300px;
+ }
+ 
   .samuraitravel-pre-wrap {
    /* 改行文字で行を折り返す */
    white-space: pre-wrap;

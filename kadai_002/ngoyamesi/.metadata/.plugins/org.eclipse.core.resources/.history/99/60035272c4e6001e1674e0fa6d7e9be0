@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+         <div th:replace="~{fragment :: meta}"></div>   
+              
+         <div th:replace="~{fragment :: styles}"></div>
+        
+        <title>NAGOYAMASI</title>	
+    </head>
+    <body>
+         <div class="samuraitravel-wrapper">
+             <!-- ヘッダー -->
+             <div th:replace="~{fragment :: header}"></div>
+             
+             <main>
+                 <div class="container pt-4 pb-5 samuraitravel-container">
+                     <div th:if="${param.loggedIn}" class="alert alert-info">
+                         ログインしました。
+                     </div>  
+                     
+                     <div th:if="${param.loggedOut}" class="alert alert-info">
+                         ログアウトしました。
+                     </div>
+                     
+                      <div class="d-flex justify-content-center">                                            
+                         <form method="get" th:action="@{/houses}" class="mb-5 samuraitravel-search-form">
+                             <div class="input-group">
+                                 <input type="text" class="form-control" name="keyword" th:value="${keyword}" placeholder="民宿名・目的地">
+                                 <button type="submit" class="btn text-white shadow-sm samuraitravel-btn">検索</button> 
+                             </div>               
+                         </form>                        
+                     </div>                                                                                                  
+                                                      
+                     <h2 class="text-center mb-3">新着</h2>
+                     <div class="row row-cols-lg-5 row-cols-2 g-3 mb-5">                                        
+                         <div class="col" th:each="newHouse : ${newHouses}">
+                             <a th:href="@{/houses/__${newHouse.getId()}__}" class="link-dark samuraitravel-card-link">
+                                 <div class="card h-100">                                                                        
+                                     <img th:if="${newHouse.getImageName()}" th:src="@{/storage/__${newHouse.getImageName()}__}" class="card-img-top samuraitravel-vertical-card-image" alt="店舗画像">                                     
+                                     <img th:unless="${newHouse.getImageName()}" th:src="@{/images/noImage.png}" class="card-img-top samuraitravel-vertical-card-image" alt="NO IMAGE">                                                                                                                        
+                                     <div class="card-body">                                    
+                                         <h3 class="card-title" th:text="${newHouse.getName()}"></h3>
+                                         <p class="card-text mb-1">
+                                             <small class="text-muted" th:text="${newHouse.getAddress()}"></small>                                            
+                                         </p>
+                                         <p class="card-text">
+                                             <span th:text="${#numbers.formatInteger(newHouse.getPrice(), 1, 'COMMA') + '円 / 泊'}"></span>                                            
+                                         </p>                                    
+                                     </div>
+                                 </div>    
+                             </a>            
+                         </div>                                               
+                     </div>
+                     
+                     <div class="row justify-content-center">
+                         <div class="col-xl-5 col-lg-6 col-md-8">                    
+                     
+                             <h2 class="text-center mb-3">エリアから探す</h2>                                        
+                              
+                             <table class="table">
+                                 <tbody>                                                     
+                                    
+                                     <tr>
+                                         <th>名古屋</th>
+                                         <td>
+                                             <a th:href="@{/restaurants?area=千種区}" class="me-2">千種区</a>
+                                             <a th:href="@{/restaurants?area=東区}" class="me-2">東区</a>
+                                             <a th:href="@{/restaurants?area=北区}" class="me-2">北区</a>
+                                             <a th:href="@{/restaurants?area=西区}" class="me-2">西区</a>
+                                             <a th:href="@{/restaurants?area=中村区}" class="me-2">中村区</a>
+                                             <a th:href="@{/restaurants?area=中区}" class="me-2">中区</a>
+                                             <a th:href="@{/restaurants?area=昭和区}" class="me-2">昭和区</a>
+                                             <a th:href="@{/restaurants?area=瑞穂区}" class="me-2">瑞穂区</a>
+                                             <a th:href="@{/restaurants?area=熱田区}" class="me-2">熱田区</a>
+                                             <a th:href="@{/restaurants?area=中川区}" class="me-2">中川区</a>
+                                             <a th:href="@{/restaurants?area=港区}" class="me-2">港区</a>
+                                             <a th:href="@{/restaurants?area=南区}" class="me-2">南区</a>
+                                             <a th:href="@{/restaurants?area=守山区}" class="me-2">守山区</a>
+                                             <a th:href="@{/restaurants?area=緑区}" class="me-2">緑区</a>
+                                             <a th:href="@{/restaurants?area=名東区}" class="me-2">名東区</a>
+                                             <a th:href="@{/restaurants?area=天白区}">天白区</a>
+                                         </td>                                     
+                                     </tr>                                                                                                                                                                                                                                                                                                                                             
+                                 </tbody>
+                             </table>  
+                         </div>
+                     </div>                      
+                      <div th:if="${successMessage}" class="alert alert-info">
+                         <span th:text="${successMessage}"></span>
+                     </div>  
+                 </div>
+             </main>
+         </div> 
+             <!-- フッター -->
+             <div th:replace="~{fragment :: footer}"></div>
+             
+         <div th:replace="~{fragment :: script}"></div>  
+	</body>
+</html>
