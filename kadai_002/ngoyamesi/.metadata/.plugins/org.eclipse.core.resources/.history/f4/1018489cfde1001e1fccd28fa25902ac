@@ -1,7 +1,0 @@
-package com.example.nagoyamesi.event;
-
-
-@Getter
-public class SignupEvent {
-
-}

@@ -50,7 +50,6 @@
     <fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
     <fullyQualifiedTypeName name="com.example.nagoyamesi.repository.UserRepository"/>
     <fullyQualifiedTypeName name="com.example.nagoyamesi.entity.User"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="jakarta.persistence.JoinColumn"/>
     <fullyQualifiedTypeName name="jakarta.persistence.OneToMany"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Sort.Direction"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="com.example.nagoyamesi.entity.Restaurant"/>
     <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 </qualifiedTypeNameHistroy>
