@@ -41,8 +41,8 @@ CREATE TABLE IF NOT EXISTS reservations(
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	user_id INT NOT NULL,
 	restaurant_id INT NOT NULL,
-	reservation_day INT NOT NULL,
-	reservation_time INT NOT NULL,
+	reservation_day VARCHAR(50) NOT NULL,
+	reservation_time VARCHAR(50) NOT NULL,
 	reservation_number_people INT NOT NULL,
 	created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP

@@ -20,6 +20,7 @@ INSERT IGNORE INTO users (id, role_id, name, furigana, age, post_code, address, 
 INSERT IGNORE INTO reservations (user_id, restaurant_id, reservation_day, reservation_time, reservation_number_people) VALUES (1, 1, '2024-03-02', '18:00:00', 2);
 INSERT IGNORE INTO reservations (user_id, restaurant_id, reservation_day, reservation_time, reservation_number_people) VALUES (2, 2, '2024-03-04', '19:00:00', 3);
 INSERT IGNORE INTO reservations (user_id, restaurant_id, reservation_day, reservation_time, reservation_number_people) VALUES (3, 3, '2024-03-02', '18:00:00', 4);
+INSERT IGNORE INTO reservations (user_id, restaurant_id, reservation_day, reservation_time, reservation_number_people) VALUES (1, 2, '2024-03-30', '18:00:00', 2);
 
 -- reviewsテーブル
 INSERT IGNORE INTO reviews (restaurant_id, user_id, number_stars, comment) VALUES (1, 1, 4, 'とてもおいしかった。');

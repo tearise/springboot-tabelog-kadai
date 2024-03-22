@@ -36,7 +36,7 @@ public class Restaurant {
     
     //@OneToMany
     @JoinColumn(name = "category_id", nullable = false)
-    private Integer categoryId;
+    private Category category;
 
     @Column(name = "regular_closing", nullable = false)
     private String regularClosing;
