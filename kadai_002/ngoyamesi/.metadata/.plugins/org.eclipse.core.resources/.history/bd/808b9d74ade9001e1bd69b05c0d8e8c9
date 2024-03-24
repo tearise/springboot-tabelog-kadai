@@ -1,0 +1,14 @@
+package com.example.nagoyamesi.service;
+
+public class ReservationService {
+	public static void main(String[] args) {  
+	    LocalDate myObj = LocalDate.now();  // Create a date object
+	    System.out.println(myObj);  // Display the current date
+	  }  
+	
+	// 2時間以上の空きがある
+	 public boolean isWithinCapacity(String fromReservationTime, String capacity) {
+         return fromReservationTime <= Today;
+     }
+	
+}

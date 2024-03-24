@@ -1,0 +1,18 @@
+package com.example.nagoyamesi.service;
+
+import java.time.LocalDate;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class ReservationService {
+	public static void main(String[] args) {  
+	    LocalDate timeNow  = LocalDate.now();  // Create a date object
+	    System.out.println(timeNow);  // Display the current date
+	  }  
+	//2時間以上の空きがあるか
+	 public boolean okTime(Integer fromReservationTime, Integer timeNow) {
+         return  <= TimeNow;
+     }
+     
+}	

@@ -1,0 +1,18 @@
+package com.example.nagoyamesi.service;
+
+import java.time.LocalDate;
+
+public class ReservationService {
+	 public static void main(String[] args) {
+		    LocalDate timeNow = LocalDate.now(); // Create a date object
+		    System.out.println(timeNow); // Display the current date
+		  }
+
+		  // 2時間以上の空きがある
+		  public boolean okTime(LocalTime fromReservationTime, LocalDate timeNow) {
+		    // 2時間後の時刻を取得
+		    LocalTime twoHoursLater = fromReservationTime.plusHours(2);
+		    // 2時間後の時刻が現在時刻より後の場合、空きがある
+		    return twoHoursLater.compareTo(timeNow) > 0;
+		  }
+		}

@@ -1,0 +1,7 @@
+package com.example.nagoyamesi.form;
+
+@Data
+@AllArgsConstructor
+public class ReservationRegisterForm {
+
+}

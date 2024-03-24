@@ -1,9 +1,0 @@
-package com.example.nagoyamesi.form;
-
-import lombok.Data;
-
-@Data
-@AllArgsConstructor
-public class UserEditForm {
-
-}
