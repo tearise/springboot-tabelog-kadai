@@ -1,9 +1,0 @@
-package HouseController;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-@RequesutMapping("/restaurants")
-public class RestaurantController {
-
-}
